@@ -98,6 +98,7 @@ module.exports = {
      * @returns {Promise<String>}
      */
     async getLatestRevisionNumber() {
+        return 706915;
         const url = this.getOsCdnUrl() + '%2FLAST_CHANGE?alt=media';
         return (await got(url, this.getRequestOptions(url))).body;
     },
